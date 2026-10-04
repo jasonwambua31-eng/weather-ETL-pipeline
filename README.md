@@ -17,7 +17,7 @@ This project demonstrates core data engineering concepts by building an end-to-e
 * **Automation:** Windows Task Scheduler, Batch scripting
 * **Database:** SQLite
 
-## 🚀 How to Run Locally
+# How to Run Locally
 1. Clone this repository:
    ```bash
    git clone https://github.com/jasonwambua31-eng/weather-ETL-pipeline.git
