@@ -8,3 +8,6 @@ pipeline_log.txt
 #ignore python virtual environment folder
 venv/
 env/
+
+#ignore pycharm project files
+__pycache__/
