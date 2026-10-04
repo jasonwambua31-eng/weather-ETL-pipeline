@@ -1,0 +1,10 @@
+#ignore the db file plus the log file
+weather_data.db
+pipeline_log.txt
+
+#ignore the .env file
+.env
+
+#ignore python virtual environment folder
+venv/
+env/
