@@ -2,7 +2,6 @@ import json
 import requests
 
 USE_MOCK_DATA = True
-api_key = "dfda0e150b16b87cb5c9accae8d55138"
 city = "Nairobi"
 
 
