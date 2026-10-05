@@ -24,7 +24,7 @@ def get_weather_data():
     if response.status_code == 200:
         return response.json()
 
-    print(f"Error fetching data from API: {response.status_code}")
+    print(f"error fetching data from API: {response.status_code}")
     return None
 
 #getting the extaraction
