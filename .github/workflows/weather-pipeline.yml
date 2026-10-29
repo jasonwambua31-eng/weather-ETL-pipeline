@@ -1,0 +1,24 @@
+name: Daily Weather ETL Pipeline
+
+on:
+  schedule:
+    - cron: '0 5 * * *'    # Runs at 05:00 UTC = 08:00 Nairobi time, every day
+  workflow_dispatch:        # Adds a manual "Run workflow" button so we can test NOW
+
+jobs:
+  etl:
+    runs-on: ubuntu-latest   # The free Linux machine GitHub gives us
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run the ETL pipeline
+        run: python load.py
