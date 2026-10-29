@@ -2,7 +2,6 @@ import json
 import requests
 
 USE_MOCK_DATA = True
-api_key = "dfda0e150b16b87cb5c9accae8d55138"
 city = "Nairobi"
 
 
@@ -25,7 +24,7 @@ def get_weather_data():
     if response.status_code == 200:
         return response.json()
 
-    print(f"Error fetching data from API: {response.status_code}")
+    print(f"error fetching data from API: {response.status_code}")
     return None
 
 #getting the extaraction
